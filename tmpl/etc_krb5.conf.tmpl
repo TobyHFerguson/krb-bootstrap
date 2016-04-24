@@ -10,6 +10,9 @@
  ticket_lifetime = 24h
  renew_lifetime = 7d
  forwardable = true
+ udp_preference_limit = 1
+ default_tgs_enctypes = arcfour-hmac
+ default_tkt_enctypes = arcfour-hmac 
 
 [realms]
  @@kdc_realm@@ = {
