@@ -178,7 +178,7 @@ create_kdc_database() {
   log INFO "help it along, generate some activity on the host (move the mouse,"
   log INFO "generate disk IO, etc.)."
 
-  $KDB5_UTIL -P "cloudera-test" create -s >/dev/null ||
+  $KDB5_UTIL -P "cloudera" create -s >/dev/null ||
     error "Unable to create kerberos KDC database" 1
 
   log DEBUG "Generating cloudera-scm/admin principal for Cloudera Manager"
